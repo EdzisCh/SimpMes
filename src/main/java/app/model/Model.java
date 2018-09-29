@@ -1,6 +1,7 @@
 package app.model;
 
 import app.entites.User;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,7 +22,7 @@ public class Model {
     model.add(user);
   }
 
-  public List<Object> list() {
+  public List<String> list() {
     return model.stream()
         .map(User::getName)
         .collect(Collectors.toList());
