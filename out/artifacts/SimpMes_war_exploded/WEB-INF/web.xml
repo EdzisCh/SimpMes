@@ -6,7 +6,7 @@
   <!-- add servlet -->
   <servlet>
     <servlet-name>add</servlet-name>
-    <servlet-class>app.servlets.AddUserServlet</servlet-class>
+    <servlet-class>app.servlets.AddServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -16,12 +16,12 @@
 
   <!-- list servlet -->
   <servlet>
-    <servlet-name>show</servlet-name>
-    <servlet-class>app.servlets.ShowUsersServlet</servlet-class>
+    <servlet-name>list</servlet-name>
+    <servlet-class>app.servlets.ListServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>show</servlet-name>
-    <url-pattern>/show</url-pattern>
+    <servlet-name>list</servlet-name>
+    <url-pattern>/list</url-pattern>
   </servlet-mapping>
 </web-app>

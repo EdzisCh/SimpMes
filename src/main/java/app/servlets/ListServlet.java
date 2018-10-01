@@ -8,7 +8,8 @@ import javax.servlet.RequestDispatcher;
 /**
  * Created by Привет on 26.09.2018.
  */
-public class ShowUsersServlet extends javax.servlet.http.HttpServlet {
+
+public class ListServlet extends javax.servlet.http.HttpServlet {
 
   protected void doPost(javax.servlet.http.HttpServletRequest request,
       javax.servlet.http.HttpServletResponse response)
@@ -23,7 +24,7 @@ public class ShowUsersServlet extends javax.servlet.http.HttpServlet {
     List<String> names = model.list();
     request.setAttribute("userNames", names);
 
-    RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/list.jsp");
+    RequestDispatcher requestDispatcher = request.getRequestDispatcher("/list.jsp");
     requestDispatcher.forward(request, response);
 
   }
